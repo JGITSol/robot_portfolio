@@ -1,0 +1,120 @@
+Metadata-Version: 2.4
+Name: robot_arm_simulator
+Version: 1.0.0
+Summary: Advanced robotic arm simulation with PyBullet featuring multi-robot coordination and production line automation
+Home-page: https://github.com/yourusername/robot_arm_simulator
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Keywords: robotics simulation pybullet automation production-line robot-arm
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Robotics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pybullet>=3.2.5
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: pyyaml>=5.3.1
+Requires-Dist: matplotlib>=3.3.0
+Requires-Dist: networkx>=2.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Robotic Arm Production Line Simulation
+
+![Robotic Arm Simulation](docs/images/robotic_arm_simulation.png)
+
+A PyBullet-based simulation of a production line with multiple robotic arms, each equipped with different grippers to handle various objects on a conveyor belt.
+
+## Features
+
+- **Multiple Robot Arms**: Three 6-DOF robotic arms working in parallel
+- **Specialized Grippers**: Different gripper types (parallel, suction) for different object types
+- **Object Variety**: Handles decahedrons, tetrahedrons, and cylinders
+- **Conveyor System**: Realistic conveyor belt simulation
+- **Pick and Place**: Automated object detection and manipulation
+- **Visualization**: Real-time 3D visualization of the simulation
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/robotic-arm-simulation.git
+   cd robotic-arm-simulation
+   ```
+
+2. Create a virtual environment (recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install the package in development mode:
+   ```bash
+   pip install -e .
+   ```
+
+## Usage
+
+### Running the Demo
+
+```bash
+python -m robot_arm.demo
+```
+
+Or use the console script:
+
+```bash
+robot-arm-demo
+```
+
+### Controls
+
+- `q`: Quit the simulation
+- Mouse drag: Rotate view
+- Mouse wheel: Zoom in/out
+- Mouse right-click drag: Pan view
+
+## Project Structure
+
+```
+src/
+└── robot_arm/
+    ├── __init__.py
+    ├── grippers.py      # Gripper implementations
+    ├── robot.py         # Robot arm class
+    ├── production_line.py  # Main simulation
+    └── demo.py          # Demo script
+```
+
+## Requirements
+
+- Python 3.8+
+- PyBullet
+- NumPy
+- PyYAML
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.

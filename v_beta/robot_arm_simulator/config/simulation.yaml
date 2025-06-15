@@ -1,0 +1,5 @@
+# Simulation configuration
+gui: true
+realtime: true
+time_step: 1.0/240.0
+gravity: [0, 0, -9.81]
