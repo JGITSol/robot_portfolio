@@ -1,0 +1,4 @@
+# file: D:\REPOS\robot_portfolio\v_beta\src\lightpath\core.py
+# hypothesis_version: 6.135.10
+
+[0.5, 'No path exists', 'astar', 'dijkstra', 'pos', 'weight']

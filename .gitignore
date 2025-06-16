@@ -2,3 +2,6 @@ venv/
 __pycache__
 local_TEMP
 downloads
+.pytest_cache
+.coverage
+coverage.xml
