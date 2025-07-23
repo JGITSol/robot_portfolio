@@ -5,3 +5,4 @@ downloads
 .pytest_cache
 .coverage
 coverage.xml
+src
